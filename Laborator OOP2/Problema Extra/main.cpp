@@ -41,9 +41,9 @@ PassedYearsComparison(ep4, ep5));
 
     MovieSeries series;
     series.Init();
-    series.AddMovie(ep5);
-    series.AddMovie(ep4);
-    series.AddMovie(ep6);
+    series.AddMovie(&ep5);
+    series.AddMovie(&ep4);
+    series.AddMovie(&ep6);
 
     series.SortList();
     series.PrintList();

@@ -2,11 +2,11 @@
 #include "movie.h"
 class MovieSeries {
 private:
-	Movie *movieSerie;
+	Movie* movieSerie[16];
 	int count;
 public:
 	void Init();
-	void AddMovie(const Movie& movie);
+	void AddMovie(Movie *movie);
 	void PrintList();
 	void SortList();
 };
