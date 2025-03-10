@@ -41,8 +41,8 @@ void Canvas::clear()
 }
 void Canvas::print() const{
 	for (int i = 0; i < this->lines; i++) {
-		for (int q = 0; q < this->lines; q++){
-			std::cout << this->matrix[i][q] << " ";
+		for (int q = 0; q < this->columns; q++){
+			std::cout << this->matrix[i][q];
 		}
 		std::cout << std::endl;
 	}
