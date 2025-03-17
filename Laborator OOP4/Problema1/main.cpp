@@ -20,5 +20,16 @@ int main() {
 	Sort s3(10, 1, 2, 4, 323, 457, 12, 86, 2, 6, 3);
 	s3.InsertSort(true);
 	s3.Print();
+	cout << endl;
+
+	Sort s5("10,20,42,42,341,342,123,555,232");
+	s5.BubbleSort();
+	s5.Print();
+	
+
+	cout << endl;
+	Sort s4(11, v);
+	s4.BubbleSort();
+	s4.Print();
 
 }
