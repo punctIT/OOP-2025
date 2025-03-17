@@ -28,7 +28,8 @@ int main() {
 	
 
 	cout << endl;
-	Sort s4(11, v);
+
+	Sort s4 = { 6 ,24,5,2,35,23,53 };
 	s4.BubbleSort();
 	s4.Print();
 

@@ -1,5 +1,5 @@
 #include <memory>
-
+#include <iostream>
 #pragma once
 class Sort {
 	int* array;
@@ -7,15 +7,11 @@ class Sort {
 public:
 	//add constructors
 	Sort(int n, int min, int max);
-	Sort(int n, int* a) : size(n){
-		this->array = new int[n];
-		for (int i = 0; i < n; i++)
-			this->array[i] = a[i];
-		
-	};
+	Sort(std::initializer_list<int> init);
 	Sort(int v[], int n);
 	Sort(int n,...);
 	Sort(const char *numbers);
+
 	//cursul de maine 
 	~Sort();
 

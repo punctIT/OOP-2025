@@ -9,10 +9,17 @@ Sort::Sort(int n, int min, int max)
 	this->array = new int[n];
 	srand(NULL);
 	for (int i = 0; i < n; ++i){
-		this->array[i]=rand() % max + min;
+		this->array[i]=rand() % (max-min) + min;
 	}
 }
-
+Sort::Sort(std::initializer_list<int> init) {
+	this->size= init.size();
+	this->array = new int[this->size];
+	int i = 0;
+	for (int val : init) {
+		this->array[i++] = val;
+	}
+}
 Sort::Sort(int v[], int n)
 {
 	this->size = n;
