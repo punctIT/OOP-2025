@@ -11,3 +11,42 @@ double BMW::RaceTime(double lentgh, WeatherCondition weather) {
 	}
 	return lentgh / speed;
 }
+void BMW::SetFuelCapacity(int n) {
+    this->FuelCapacity = n;
+}
+int BMW::GetFuelCapacity() {
+    return this->FuelCapacity;
+}
+const char* BMW::GetName() {
+    return this->Name;
+}
+void BMW::SetSpeed(WeatherCondition weather, double speed) {
+    if (weather == WeatherCondition::RAIN) {
+        this->speedRain = speed;
+    }
+    if (weather == WeatherCondition::SUNNY) {
+        this->speedSunny = speed;
+    }
+    if (weather == WeatherCondition::SNOW) {
+        this->speedSnow = speed;
+    }
+}
+double BMW::GetSpeed(WeatherCondition weather) {
+    if (weather == WeatherCondition::RAIN) {
+        return this->speedRain;
+    }
+    if (weather == WeatherCondition::SUNNY) {
+        return this->speedSunny;
+    }
+    if (weather == WeatherCondition::SNOW) {
+        return this->speedSnow;
+    }
+}
+
+double BMW::GetAvarageSpeed() {
+    return this->AvarageSpeed;
+}
+double BMW::GetFuelConsumption()
+{
+    return this->FuelConsumption;
+}

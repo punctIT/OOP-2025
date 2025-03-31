@@ -9,3 +9,42 @@ double RangeRover::RaceTime(double lentgh, WeatherCondition weather) {
 	}
 	return lentgh / speed;
 }
+void RangeRover::SetFuelCapacity(int n) {
+    this->FuelCapacity = n;
+}
+int RangeRover::GetFuelCapacity() {
+    return this->FuelCapacity;
+}
+const char* RangeRover::GetName() {
+    return this->Name;
+}
+void RangeRover::SetSpeed(WeatherCondition weather, double speed) {
+    if (weather == WeatherCondition::RAIN) {
+        this->speedRain = speed;
+    }
+    if (weather == WeatherCondition::SUNNY) {
+        this->speedSunny = speed;
+    }
+    if (weather == WeatherCondition::SNOW) {
+        this->speedSnow = speed;
+    }
+}
+double RangeRover::GetSpeed(WeatherCondition weather) {
+    if (weather == WeatherCondition::RAIN) {
+        return this->speedRain;
+    }
+    if (weather == WeatherCondition::SUNNY) {
+        return this->speedSunny;
+    }
+    if (weather == WeatherCondition::SNOW) {
+        return this->speedSnow;
+    }
+}
+
+double RangeRover::GetAvarageSpeed() {
+    return this->AvarageSpeed;
+}
+double RangeRover::GetFuelConsumption()
+{
+    return this->FuelConsumption;
+}
