@@ -19,6 +19,11 @@ int main()
 	{
 		printf("Index:%d, Key=%d, Value=%s\n", index, key, value);
 	}
-	//m.print();
+	
+	m.Delete(20);
+	m.Set(140, "ceva");
+	m.print();
+
+
 	return 0;
 }
