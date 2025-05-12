@@ -1,29 +1,10 @@
 #include <iostream>
-#include "Map.h"	
 
 using namespace std;
 
 int main()
-{
-	Map<int, const char*> m;
-	m[10] = "C++";
-	m[20] = "test";
-	m[30] = "Poo";
-	for (auto [key, value, index] : m)
-	{
-		printf("Index:%d, Key=%d, Value=%s\n", index, key, value);
-	}
-	//m.print();
-	m[20] = "result";
-	for (auto [key, value, index] : m)
-	{
-		printf("Index:%d, Key=%d, Value=%s\n", index, key, value);
-	}
+{	
+	char s[] = "1234ABCD";
+	cout << sizeof(s);
 	
-	m.Delete(20);
-	m.Set(140, "ceva");
-	m.print();
-
-
-	return 0;
 }
