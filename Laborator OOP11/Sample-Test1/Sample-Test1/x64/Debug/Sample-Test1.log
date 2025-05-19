@@ -1,0 +1,17 @@
+﻿  test.cpp
+C:\Users\teodo\Desktop\Sample-Test1\Sample-Test1\Sort.h(10,19): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  (compiling source file '/test.cpp')
+      C:\Users\teodo\Desktop\Sample-Test1\Sample-Test1\Sort.h(10,19):
+      the template instantiation context (the oldest one first) is
+          C:\Users\teodo\Desktop\Sample-Test1\Sample-Test1\test.cpp(9,16):
+          see reference to class template instantiation 'Array<int>' being compiled
+          C:\Users\teodo\Desktop\Sample-Test1\Sample-Test1\Sort.h(9,2):
+          while compiling class template member function 'Array<int>::Array(std::initializer_list<_Ty>)'
+          with
+          [
+              _Ty=int
+          ]
+              C:\Users\teodo\Desktop\Sample-Test1\Sample-Test1\test.cpp(9,21):
+              see the first reference to 'Array<int>::Array' in 'SortCORECT_Array_Test::TestBody'
+  
+  Sample-Test1.vcxproj -> C:\Users\teodo\Desktop\Sample-Test1\x64\Debug\Sample-Test1.exe
